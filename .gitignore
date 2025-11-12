@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.bolt/
+vite.config.ts.timestamp-*
+expo-env.d.ts

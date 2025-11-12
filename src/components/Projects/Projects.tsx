@@ -15,30 +15,63 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Emotion Classifier",
-      description: "Built an NLP-based classifier to detect emotions from text using Scikit-learn. Performed comprehensive preprocessing including tokenization and stop-word removal, and evaluated performance using accuracy and F1-score metrics.",
-      technologies: ["Python", "Scikit-learn", "NLP", "Pandas", "NumPy"],
-      liveUrl: "https://emotion-classifier-demo.example.com",
-      githubUrl: "https://github.com/leslyvj/emotion-classifier",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg"
+      title: "MultiQuery-AI",
+      description: "Offline multi-modal RAG system that ingests documents, images, and audio, embeds them, and runs unified semantic search with generation for mixed-media queries.",
+      technologies: [
+        "Python",
+        "Whisper",
+        "LangChain",
+        "Chroma",
+        "FastAPI"
+      ],
+      liveUrl: "https://github.com/leslyvj/MultiQuery-AI",
+      githubUrl: "https://github.com/leslyvj/MultiQuery-AI",
+      image: "https://images.pexels.com/photos/3861957/pexels-photo-3861957.jpeg"
     },
     {
       id: 2,
-      title: "BMI Prediction Model",
-      description: "Developed a regression model to estimate BMI using health data. Conducted exploratory data analysis, feature engineering, and implemented Linear Regression and Decision Tree algorithms for accurate predictions.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
-      liveUrl: "https://bmi-predictor-demo.example.com",
-      githubUrl: "https://github.com/leslyvj/bmi-prediction",
-      image: "https://images.pexels.com/photos/6111563/pexels-photo-6111563.jpeg"
+      title: "Job Verifier Multi-Agent System",
+      description: "Coordinated agents that scrape job listings, run heuristic and OSINT checks, and escalate suspicious roles to an LLM reviewer to flag potential fraud at scale.",
+      technologies: [
+        "Python",
+        "LangGraph",
+        "LangServe",
+        "FastAPI",
+        "OSINT"
+      ],
+      liveUrl: "https://github.com/leslyvj/Job_verifier_Multi-agent_system",
+      githubUrl: "https://github.com/leslyvj/Job_verifier_Multi-agent_system",
+      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg"
     },
     {
       id: 3,
-      title: "Job Monitoring Dashboard",
-      description: "Created an interactive dashboard using HTML/CSS and JavaScript to monitor and visualize job posting trends. Enhanced front-end development skills while presenting data insights through dynamic charts and visual elements.",
-      technologies: ["HTML/CSS", "JavaScript", "Chart.js", "Data Visualization"],
-      liveUrl: "https://job-dashboard-demo.example.com",
-      githubUrl: "https://github.com/leslyvj/job-monitoring-dashboard",
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg"
+      title: "DHARMA Legal Analysis System",
+      description: "Digital hub that processes FIRs end-to-end, extracting entities, mapping relationships, and surfacing high-priority legal insights through an interactive dashboard.",
+      technologies: [
+        "Python",
+        "spaCy",
+        "HuggingFace",
+        "FastAPI",
+        "Streamlit"
+      ],
+      liveUrl: "https://github.com/leslyvj/DHARMA-legal-analysis-system",
+      githubUrl: "https://github.com/leslyvj/DHARMA-legal-analysis-system",
+      image: "https://images.pexels.com/photos/8217549/pexels-photo-8217549.jpeg"
+    },
+    {
+      id: 4,
+      title: "Audio RAG Optimized",
+      description: "GPU-accelerated audio RAG pipeline leveraging Faster-Whisper, chunking, and local LLMs to deliver high-throughput semantic search across long-form recordings.",
+      technologies: [
+        "Python",
+        "Faster-Whisper",
+        "CUDA",
+        "Chroma",
+        "LangChain"
+      ],
+      liveUrl: "https://github.com/leslyvj/audio-rag-optimized",
+      githubUrl: "https://github.com/leslyvj/audio-rag-optimized",
+      image: "https://images.pexels.com/photos/6759604/pexels-photo-6759604.jpeg"
     }
   ];
 
@@ -51,8 +84,8 @@ const Projects: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A selection of projects that showcase my expertise in machine learning, 
-            data analysis, and model development using modern ML technologies.
+            A showcase of applied AI systems spanning multi-modal RAG, agentic verification, 
+            legal automation, and GPU-accelerated audio intelligence.
           </p>
         </div>
 
